@@ -1,0 +1,20 @@
+{
+	"name": "angular-sizzle",
+	"version": "0.0.2",
+	"author": "Emanuel Kluge",
+    "description": "Get the jQuery-selector-engine without the jQuery-overload.",
+    "homepage": "https://github.com/herschel666/angular-sizzle",
+	"main": "dist/angular-sizzle-0.0.2.min.js",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/herschel666/angular-sizzle.git"
+    },
+    "dependencies": {
+    	"angular": "1.0.7"
+    },
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"components"
+	]
+}

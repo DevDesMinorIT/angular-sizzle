@@ -1,13 +1,8 @@
-/*
+/*!
  * Angular-Sizzle
- *
- * Get the jQuery-Selector-Engine without
- * the jQuery-Overload.
- *
- * https://github.com/herschel666/angular-sizzle
 **/
 
-(function (angular, Sizzle, elem, _elem, undefined) {
+(function (angular, sizzle, elem, _elem) {
 
 	'use strict';
 
@@ -24,7 +19,7 @@
 			 * Overwrite the angular-element-method and introduce Sizzle.
 			**/
 			angular[elem] = function (slctr) {
-				return slctr instanceof angular[_elem] && slctr || angular[_elem](Sizzle(slctr));
+				return slctr instanceof angular[_elem] && slctr || angular[_elem](sizzle(slctr));
 			};
 
 		});

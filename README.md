@@ -10,11 +10,10 @@ Sizzle 1.9.4 (~18 kb) **vs** jQuery 1.10.0 (~92 kb)
 
 ## How to use?
 
-First of all include Angular.js, Sizzle.js and Angular-Sizzle.js. Then, when instatiating your app, include 'ek.Sizzle' as a dependency.
+The current version of Sizzle.js (v1.9.3) is included, so you only have to include Angular.js and Angular-Sizzle.js. Then, when instantiating your app, include 'ek.Sizzle' as a dependency.
 
 	<script src="path/to/angular.js"></script>
-	<script src="path/to/sizzle.js"></script>
-	<script src="path/to/angular-sizzle.js"></script>
+	<script src="path/to/angular-sizzle-0.0.2.min.js"></script>
 	<script>
 		var app = angular.module('tehApp', ['ek.Sizzle']);
 	</script>
@@ -45,3 +44,6 @@ No problem!
 <a href="http://www.wtfpl.net/"><img
        src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
        width="80" height="15" alt="WTFPL" /></a>
+
+---
+Thx to [angular-component-seed](https://github.com/PascalPrecht/angular-component-seed)!

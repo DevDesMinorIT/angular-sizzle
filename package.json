@@ -1,0 +1,24 @@
+{
+    "name": "angular-sizzle",
+    "version": "0.0.2",
+    "description": "Get the jQuery-selector-engine without the jQuery-overload.",
+    "homepage": "https://github.com/herschel666/angular-sizzle",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/herschel666/angular-sizzle.git"
+    },
+    "keywords": [
+        "angular",
+        "sizzle"
+    ],
+    "author": "Emanuel Kluge",
+    "license": "WTFPL",
+    "gitHead": "ad978cf29b08895dee237882a44a220ab3c38917",
+    "readmeFilename": "README.md",
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-uglify": "~0.2.2",
+        "grunt-contrib-jshint": "~0.6.0",
+        "grunt-contrib-concat": "~0.3.0"
+    }
+}
