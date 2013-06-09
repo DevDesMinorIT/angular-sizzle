@@ -1987,6 +1987,9 @@ if ( typeof define === "function" && define.amd ) {
 
 	angular
 		.module('ek.Sizzle', [])
+		.service('ek.SizzleHelper', function () {
+
+		})
 		.run(function () {
 
 			/*
@@ -1998,7 +2001,23 @@ if ( typeof define === "function" && define.amd ) {
 			 * Overwrite the angular-element-method and introduce Sizzle.
 			**/
 			angular[elem] = function (slctr) {
-				return slctr instanceof angular[_elem] && slctr || angular[_elem](sizzle(slctr));
+
+				// The passed element is already an instance of angular._element.
+				if ( slctr instanceof angular[_elem] ) {
+					return slctr;
+				}
+
+				// A selector-string is passed - Sizzle's turn.
+				if ( typeof slctr === 'string' ) {
+					return angular[_elem](sizzle(slctr));
+				}
+
+				// The passed argument is neither instance of
+				// angular._element nor selector-string. Pass it to
+				// the angular._element-function and let it do the
+				// error-handling.
+				return angular[_elem](slctr);
+
 			};
 
 		});

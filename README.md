@@ -13,7 +13,7 @@ Sizzle 1.9.4 (~18 kb) **vs** jQuery 1.10.0 (~92 kb)
 The current version of Sizzle.js (v1.9.3) is included, so you only have to include Angular.js and Angular-Sizzle.js. Then, when instantiating your app, include 'ek.Sizzle' as a dependency.
 
 	<script src="path/to/angular.js"></script>
-	<script src="path/to/angular-sizzle-0.0.2.min.js"></script>
+	<script src="path/to/angular-sizzle-0.0.3.min.js"></script>
 	<script>
 		var app = angular.module('tehApp', ['ek.Sizzle']);
 	</script>
@@ -30,7 +30,19 @@ Due to the concept of Angular, heavy DOM-lifting stuff is done by directives, wh
 
 So check, if you really need a full-grown selector-engine. Maybe the use of directives and the `angular.element`-DOM-traversing-method suffices your needs.
 
-## Who wrote this one-liner?
+## How to test?
+
+There are some tests provided. To run them you need [Karma](http://karma-runner.github.io/0.8/index.html). Install it by entering the following into your console:
+
+	npm install -g karma
+
+After that you have the Karma Testrunner installed. Now you can run the tests by entering the following line into your console:
+
+	karma start karma.conf.js --single-run
+
+Everything should hopefully pass the test …
+
+## Who made this little Angular-Sizzle-Intermezzo?
 
 Well, me. And as chance would have it, I have a twitter and a blog. Funny, hein?!
 
